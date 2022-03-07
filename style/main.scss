@@ -1,0 +1,203 @@
+// common_scss
+@import './common_scss/reset.scss';
+@import './common_scss/color.scss';
+@import './common_scss/typhography.scss';
+
+// layout
+@import './layout/flexbox.scss';
+@import './layout/position.scss';
+
+// ui
+@import './ui/btn.scss';
+
+// style
+
+* {
+    @include reset;
+    box-sizing: border-box;
+    color :inherit;
+    background-color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+.wraper {
+    max-width: 1300px;
+        height: 100%;
+        margin: 0 auto;
+}
+
+img {
+    object-fit: cover;
+}
+
+header {
+    @include font_12($black);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: $bgc;
+    
+    .wraper {
+        @include flexbox(end, center);
+        ul {
+            @include flexbox;
+            max-width: 1300px;
+            
+            li {
+                padding : 0 12px;
+            }
+            li:last-child {
+                @include flexbox-column;
+                padding-right: 0;
+                ul {
+                    
+                    @include flexbox-column;
+                    @include pos-center-y;
+                    top: 65px;
+                    li {
+                        padding: 5px;
+                    }
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+nav {
+    @include font_12($black);
+    background-color: $white;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid $brown;
+    .wraper {
+        @include flexbox(between, center);
+        img {
+            width: 150px;
+            height: 40px;
+            object-fit:fill;
+        }
+        ul {
+            @include flexbox;
+            li {
+                padding-left: 30px;
+            }
+        }
+        div {
+            input {
+                border: none;
+                border-bottom: 1px solid $brown;
+            }
+            button {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.banner {
+    padding-top: 112px;
+    .wraper {
+        height: 800px;
+        overflow: hidden;
+        ul {
+            width: 400%;
+            height: 100%;
+            li {
+                width: 25%;
+                height: 100%;
+                padding: 0 40px;
+                float: left;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.shop {
+    @include font_12($black);
+    height: 95px;
+    background-color: $white;
+    text-align: center;
+    .wraper {
+        @include flexbox-column;
+        width: 100%;
+        padding : 0 40px;
+        h1 {
+            width: 100%;
+            line-height: 2;
+            padding: 20px 0;
+        }
+        .box-wraper {
+            @include flexbox(between, center);
+            width: 100%;;
+            padding-bottom: 20px;
+            .shop-box {
+                width: 100%;
+                div {
+                    @include flexbox;
+                    a {
+                        width: calc((100%/3) - 10px);
+                        height: 300px;
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    a:nth-child(2) {
+                        margin: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.photographer {
+    @include font_12($black);
+    height: 95px;
+    background-color: $white;
+    text-align: center;
+    .wraper {
+        @include flexbox-column;
+        width: 100%;
+        padding : 0 40px;
+        h1 {
+            width: 100%;
+            line-height: 2;
+            padding: 20px 0;
+        }
+        .box-wraper {
+            @include flexbox(between, center);
+            width: 100%;;
+            padding-bottom: 20px;
+            .photographer-box {
+                width: 100%;
+                div {
+                    @include flexbox;
+                    a {
+                        width: 100%;
+                        height: 300px;
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

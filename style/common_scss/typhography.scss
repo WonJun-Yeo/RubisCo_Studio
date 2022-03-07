@@ -1,0 +1,36 @@
+$font : 'Nanum Gothic', sans-serif;
+
+@mixin font_10($color) {
+    font-family: $font;
+    font-size: 10px;
+    font-weight: 400;
+    color : $color;
+}
+
+@mixin font_12($color) {
+    font-family: $font;
+    font-size: 12px;
+    font-weight: 400;
+    color : $color;
+}
+
+@mixin font_13($color) {
+    font-family: $font;
+    font-size: 13px;
+    font-weight: 400;
+    color : $color;
+}
+
+@mixin font_14($color) {
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 400;
+    color : $color;
+}
+
+@mixin font24($color) {
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 400;
+    color : $color;
+}

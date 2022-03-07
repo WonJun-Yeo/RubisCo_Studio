@@ -1,0 +1,17 @@
+@mixin btn_new {
+    width: 50px;
+    height: 18px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: $btn_new;
+    @include font_12($btn_new)
+}
+
+@mixin btn_new {
+    width: 50px;
+    height: 18px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: $btn_new;
+    @include font_12($btn_best)
+}

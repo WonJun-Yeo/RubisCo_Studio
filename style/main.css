@@ -1,0 +1,274 @@
+* {
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+  /* HTML5 display-role reset for older browsers */
+  box-sizing: border-box;
+  color: inherit;
+  background-color: inherit;
+}
+* html, * body, * div, * span, * applet, * object, * iframe,
+* h1, * h2, * h3, * h4, * h5, * h6, * p, * blockquote, * pre,
+* a, * abbr, * acronym, * address, * big, * cite, * code,
+* del, * dfn, * em, * img, * ins, * kbd, * q, * s, * samp,
+* small, * strike, * strong, * sub, * sup, * tt, * var,
+* b, * u, * i, * center,
+* dl, * dt, * dd, * ol, * ul, * li,
+* fieldset, * form, * label, * legend,
+* table, * caption, * tbody, * tfoot, * thead, * tr, * th, * td,
+* article, * aside, * canvas, * details, * embed,
+* figure, * figcaption, * footer, * header, * hgroup,
+* menu, * nav, * output, * ruby, * section, * summary,
+* time, * mark, * audio, * video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* article, * aside, * details, * figcaption, * figure,
+* footer, * header, * hgroup, * menu, * nav, * section {
+  display: block;
+}
+* body {
+  line-height: 1;
+}
+* ol, * ul {
+  list-style: none;
+}
+* blockquote, * q {
+  quotes: none;
+}
+* blockquote:before, * blockquote:after,
+* q:before, * q:after {
+  content: "";
+  content: none;
+}
+* table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.wraper {
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+img {
+  object-fit: cover;
+}
+
+header {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #ECE9E2;
+}
+header .wraper {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+header .wraper ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+}
+header .wraper ul li {
+  padding: 0 12px;
+}
+header .wraper ul li:last-child {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 0;
+}
+header .wraper ul li:last-child ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 65px;
+  display: none;
+}
+header .wraper ul li:last-child ul li {
+  padding: 5px;
+}
+
+nav {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid #A48F75;
+}
+nav .wraper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+nav .wraper img {
+  width: 150px;
+  height: 40px;
+  object-fit: fill;
+}
+nav .wraper ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+nav .wraper ul li {
+  padding-left: 30px;
+}
+nav .wraper div input {
+  border: none;
+  border-bottom: 1px solid #A48F75;
+}
+nav .wraper div button {
+  padding-left: 10px;
+}
+
+.banner {
+  padding-top: 112px;
+}
+.banner .wraper {
+  height: 800px;
+  overflow: hidden;
+}
+.banner .wraper ul {
+  width: 400%;
+  height: 100%;
+}
+.banner .wraper ul li {
+  width: 25%;
+  height: 100%;
+  padding: 0 40px;
+  float: left;
+}
+.banner .wraper ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.shop {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  height: 95px;
+  background-color: #fff;
+  text-align: center;
+}
+.shop .wraper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0 40px;
+}
+.shop .wraper h1 {
+  width: 100%;
+  line-height: 2;
+  padding: 20px 0;
+}
+.shop .wraper .box-wraper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.shop .wraper .box-wraper .shop-box {
+  width: 100%;
+}
+.shop .wraper .box-wraper .shop-box div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.shop .wraper .box-wraper .shop-box div a {
+  width: calc(33.3333333333% - 10px);
+  height: 300px;
+}
+.shop .wraper .box-wraper .shop-box div a img {
+  width: 100%;
+  object-fit: cover;
+}
+.shop .wraper .box-wraper .shop-box div a:nth-child(2) {
+  margin: 0 15px;
+}
+
+.photographer {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  height: 95px;
+  background-color: #fff;
+  text-align: center;
+}
+.photographer .wraper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0 40px;
+}
+.photographer .wraper h1 {
+  width: 100%;
+  line-height: 2;
+  padding: 20px 0;
+}
+.photographer .wraper .box-wraper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.photographer .wraper .box-wraper .photographer-box {
+  width: 100%;
+}
+.photographer .wraper .box-wraper .photographer-box div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.photographer .wraper .box-wraper .photographer-box div a {
+  width: 100%;
+  height: 300px;
+}
+.photographer .wraper .box-wraper .photographer-box div a img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
