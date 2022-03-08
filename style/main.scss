@@ -129,7 +129,6 @@ nav {
 
 .shop {
     @include font_12($black);
-    height: 95px;
     background-color: $white;
     text-align: center;
     .wraper {
@@ -150,15 +149,15 @@ nav {
                 div {
                     @include flexbox;
                     a {
-                        width: calc((100%/3) - 10px);
-                        height: 300px;
+                        width: calc((100%/4) - 9px);
+                        margin-right: 12px;
                         img {
                             width: 100%;
                             object-fit: cover;
                         }
                     }
-                    a:nth-child(2) {
-                        margin: 0 15px;
+                    a:last-child {
+                        margin-right: 0;
                     }
                 }
             }
@@ -168,7 +167,6 @@ nav {
 
 .photographer {
     @include font_12($black);
-    height: 95px;
     background-color: $white;
     text-align: center;
     .wraper {
@@ -189,15 +187,61 @@ nav {
                 div {
                     @include flexbox;
                     a {
-                        width: 100%;
-                        height: 300px;
+                        width: calc((100%/4) - 9px);
+                        margin-right: 12px;
                         img {
                             width: 100%;
                             object-fit: cover;
                         }
                     }
+                    a:last-child {
+                        margin-right: 0;
+                    }
                 }
             }
         }
+    }
+}
+
+.notice {
+    @include font_12($black);
+    
+    text-align: center;
+    .wraper {
+        @include flexbox-column;
+        width: 100%;
+        padding : 0 40px;
+       h1 {
+        background-color: $bgc_mid;
+        width: 100%;
+        line-height: 2;
+        padding: 20px 0;
+       }
+       .notice-box {
+           @include flexbox;
+           width: 100%;
+           
+           div {
+               width: calc(50% - 10px);
+               margin-right: 20px;
+               
+               h2 {
+                padding: 10px 0;
+               }
+               ul {
+                   width: 100%;
+                li {
+                    width: 100%;
+                    a {
+                        width: 100%;
+                    }
+                }
+               }
+               
+           }
+           div:last-child {
+               margin-right: 0;
+           }
+       }
     }
 }

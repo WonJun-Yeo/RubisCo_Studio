@@ -181,7 +181,6 @@ nav .wraper div button {
   font-size: 12px;
   font-weight: 400;
   color: #333;
-  height: 95px;
   background-color: #fff;
   text-align: center;
 }
@@ -214,15 +213,15 @@ nav .wraper div button {
   justify-content: center;
 }
 .shop .wraper .box-wraper .shop-box div a {
-  width: calc(33.3333333333% - 10px);
-  height: 300px;
+  width: calc(25% - 9px);
+  margin-right: 12px;
 }
 .shop .wraper .box-wraper .shop-box div a img {
   width: 100%;
   object-fit: cover;
 }
-.shop .wraper .box-wraper .shop-box div a:nth-child(2) {
-  margin: 0 15px;
+.shop .wraper .box-wraper .shop-box div a:last-child {
+  margin-right: 0;
 }
 
 .photographer {
@@ -230,7 +229,6 @@ nav .wraper div button {
   font-size: 12px;
   font-weight: 400;
   color: #333;
-  height: 95px;
   background-color: #fff;
   text-align: center;
 }
@@ -263,12 +261,62 @@ nav .wraper div button {
   justify-content: center;
 }
 .photographer .wraper .box-wraper .photographer-box div a {
-  width: 100%;
-  height: 300px;
+  width: calc(25% - 9px);
+  margin-right: 12px;
 }
 .photographer .wraper .box-wraper .photographer-box div a img {
   width: 100%;
   object-fit: cover;
+}
+.photographer .wraper .box-wraper .photographer-box div a:last-child {
+  margin-right: 0;
+}
+
+.notice {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+.notice .wraper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0 40px;
+}
+.notice .wraper h1 {
+  background-color: #FAF6F3;
+  width: 100%;
+  line-height: 2;
+  padding: 20px 0;
+}
+.notice .wraper .notice-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.notice .wraper .notice-box div {
+  width: calc(50% - 10px);
+  margin-right: 20px;
+}
+.notice .wraper .notice-box div h2 {
+  padding: 10px 0;
+}
+.notice .wraper .notice-box div ul {
+  width: 100%;
+}
+.notice .wraper .notice-box div ul li {
+  width: 100%;
+}
+.notice .wraper .notice-box div ul li a {
+  width: 100%;
+}
+.notice .wraper .notice-box div:last-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
