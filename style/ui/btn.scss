@@ -1,17 +1,17 @@
-@mixin btn_new {
+@mixin lable_new {
     width: 50px;
     height: 18px;
     line-height: 1.5;
     text-align: center;
     background-color: $btn_new;
-    @include font_12($btn_new)
+    @include font_12($white);
 }
 
-@mixin btn_new {
+@mixin lable_best {
     width: 50px;
     height: 18px;
     line-height: 1.5;
     text-align: center;
-    background-color: $btn_new;
-    @include font_12($btn_best)
+    background-color: $btn_best;
+    @include font_12($white);
 }

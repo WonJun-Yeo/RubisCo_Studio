@@ -155,253 +155,56 @@ nav .wraper div button {
   cursor: pointer;
 }
 
-.banner {
+main {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+  width: 100%;
   padding-top: 112px;
 }
-.banner .wraper {
-  height: 800px;
-  overflow: hidden;
-}
-.banner .wraper ul {
-  width: 400%;
-  height: 100%;
-}
-.banner .wraper ul li {
-  width: 25%;
-  height: 100%;
-  padding: 0 40px;
-  float: left;
-}
-.banner .wraper ul li img {
-  width: 100%;
-  height: 100%;
-}
-
-.shop {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #333;
-  background-color: #fff;
-  text-align: center;
-}
-.shop .wraper {
+main .wraper {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
   padding: 0 40px;
 }
-.shop .wraper h1 {
-  width: 100%;
-  line-height: 2;
-  padding: 20px 0;
+main .wraper h1 {
+  margin: 120px 0 70px;
 }
-.shop .wraper .box-wraper {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-bottom: 20px;
-}
-.shop .wraper .box-wraper .shop-box {
-  width: 100%;
-}
-.shop .wraper .box-wraper .shop-box .more {
-  width: 100%;
-  margin-bottom: 15px;
-}
-.shop .wraper .box-wraper .shop-box .more a {
-  width: 100%;
-  padding: 0 10px;
-  text-align: right;
-}
-.shop .wraper .box-wraper .shop-box .more a i {
-  margin-left: 5px;
-}
-.shop .wraper .box-wraper .shop-box div {
+main .wraper div {
   align-items: center;
   display: flex;
   justify-content: center;
-}
-.shop .wraper .box-wraper .shop-box div a {
-  width: calc(25% - 9px);
-  margin-right: 12px;
-}
-.shop .wraper .box-wraper .shop-box div a img {
-  width: 100%;
-  object-fit: cover;
-}
-.shop .wraper .box-wraper .shop-box div a div {
-  align-items: flex-start;
-  display: flex;
-  justify-content: flex-start;
-  padding: 5px 0;
-}
-.shop .wraper .box-wraper .shop-box div a div .new {
-  width: 50px;
-  height: 18px;
-  line-height: 1.5;
-  text-align: center;
-  background-color: #B5B4B6;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #fff;
-}
-.shop .wraper .box-wraper .shop-box div a div .best {
-  width: 50px;
-  height: 18px;
-  line-height: 1.5;
-  text-align: center;
-  background-color: #ECCFBD;
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #fff;
-}
-.shop .wraper .box-wraper .shop-box div a:last-child {
-  margin-right: 0;
-}
-
-.photographer {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #333;
-  background-color: #fff;
-  text-align: center;
-}
-.photographer .wraper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 0 40px;
-}
-.photographer .wraper h1 {
-  width: 100%;
-  line-height: 2;
-  padding: 20px 0;
-}
-.photographer .wraper .box-wraper {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-bottom: 20px;
-}
-.photographer .wraper .box-wraper .photographer-box {
   width: 100%;
 }
-.photographer .wraper .box-wraper .photographer-box .more {
-  width: 100%;
-  margin-bottom: 15px;
+main .wraper div .question {
+  width: calc(50% - 23px);
+  margin-right: 46px;
+  margin-bottom: 50px;
 }
-.photographer .wraper .box-wraper .photographer-box .more a {
-  width: 100%;
-  padding: 0 10px;
-  text-align: right;
-}
-.photographer .wraper .box-wraper .photographer-box .more a i {
-  margin-left: 5px;
-}
-.photographer .wraper .box-wraper .photographer-box div {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.photographer .wraper .box-wraper .photographer-box div a {
-  width: calc(25% - 9px);
-  margin-right: 12px;
-}
-.photographer .wraper .box-wraper .photographer-box div a img {
-  width: 100%;
-  object-fit: cover;
-}
-.photographer .wraper .box-wraper .photographer-box div a:last-child {
-  margin-right: 0;
-}
-
-.notice {
+main .wraper div .question h2 {
   font-family: "Nanum Gothic", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #333;
   text-align: center;
 }
-.notice .wraper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 0 40px;
+main .wraper div .inquiry {
+  width: calc(50% - 23px);
+  margin-bottom: 50px;
 }
-.notice .wraper h1 {
-  background-color: #FAF6F3;
-  width: 100%;
-  line-height: 2;
-  padding: 20px 0;
-}
-.notice .wraper .notice-box {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 35px;
-}
-.notice .wraper .notice-box div {
-  position: relative;
-  width: calc(50% - 10px);
-  margin-right: 20px;
-}
-.notice .wraper .notice-box div h2 {
-  padding: 20px 0;
-}
-.notice .wraper .notice-box div ul {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  width: 100%;
-}
-.notice .wraper .notice-box div ul li {
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  line-height: 2;
-}
-.notice .wraper .notice-box div ul li a {
+main .wraper div .inquiry h2 {
   font-family: "Nanum Gothic", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: #333;
-  width: 100%;
-}
-.notice .wraper .notice-box div ul li p {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  color: #7e6f5b;
-}
-.notice .wraper .notice-box div .more {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  color: #333;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  width: auto;
-  padding: 20px 0;
-}
-.notice .wraper .notice-box div:last-child {
-  margin-right: 0;
+  text-align: center;
 }
 
 footer {
@@ -550,4 +353,4 @@ footer .wraper .detail-info-bottom .sns ul li:nth-child(1) {
   margin-right: 20px;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=customer.css.map */
