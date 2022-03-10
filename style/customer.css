@@ -156,55 +156,102 @@ nav .wraper div button {
 }
 
 main {
+  padding: 112px 0 0px;
+}
+main h1 {
   font-family: "Nanum Gothic", sans-serif;
-  font-size: 12px;
+  font-size: 24px;
   font-weight: 400;
   color: #333;
-  background-color: #fff;
-  width: 100%;
-  padding-top: 112px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 70px;
 }
-main .wraper {
+main .curiosity-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+main .curiosity-box .question {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: calc(50% - 23px);
+  margin-bottom: 50px;
+  margin-right: 46px;
+  border: 1px solid #D6D9DC;
+}
+main .curiosity-box .question h2 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  width: 50%;
+  padding: 20px 0px;
+  border-bottom: 1px solid #D6D9DC;
+  text-align: center;
+}
+main .curiosity-box .question ol {
   width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 40px;
+  max-height: 300px;
+  overflow-y: scroll;
 }
-main .wraper h1 {
-  margin: 120px 0 70px;
+main .curiosity-box .question ol li {
+  width: 100%;
 }
-main .wraper div {
+main .curiosity-box .question ol li a {
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
+  line-height: 2;
 }
-main .wraper div .question {
+main .curiosity-box .question ol li a p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  padding: 0 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main .curiosity-box .question ol li a span {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #646B72;
+  padding-right: 20px;
+}
+main .curiosity-box .inquiry {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #D6D9DC;
   width: calc(50% - 23px);
-  margin-right: 46px;
+  height: 357px;
   margin-bottom: 50px;
 }
-main .wraper div .question h2 {
+main .curiosity-box .inquiry h2 {
   font-family: "Nanum Gothic", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #333;
+  width: 50%;
+  padding: 20px 0px;
+  border-bottom: 1px solid #D6D9DC;
   text-align: center;
 }
-main .wraper div .inquiry {
-  width: calc(50% - 23px);
-  margin-bottom: 50px;
-}
-main .wraper div .inquiry h2 {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333;
-  text-align: center;
+main .curiosity-box .inquiry .inquiry-box {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 20px;
 }
 
 footer {
