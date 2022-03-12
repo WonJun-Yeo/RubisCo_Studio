@@ -51,6 +51,20 @@
   border-spacing: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body:hover::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #A48F75;
+}
+body::-webkit-scrollbar-track {
+  background-color: #ECE9E2;
+}
+
 a {
   text-decoration: none;
 }
@@ -198,25 +212,38 @@ main .curiosity-box .question ol {
   max-height: 300px;
   overflow-y: scroll;
 }
+main .curiosity-box .question ol::-webkit-scrollbar {
+  width: 5px;
+}
+main .curiosity-box .question ol:hover::-webkit-scrollbar {
+  width: 7px;
+}
+main .curiosity-box .question ol::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #A48F75;
+}
+main .curiosity-box .question ol::-webkit-scrollbar-track {
+  background-color: #ECE9E2;
+}
 main .curiosity-box .question ol li {
   width: 100%;
 }
 main .curiosity-box .question ol li a {
   align-items: center;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
-  line-height: 2;
 }
 main .curiosity-box .question ol li a p {
   font-family: "Nanum Gothic", sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 400;
   color: #333;
   padding: 0 20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  line-height: 3;
 }
 main .curiosity-box .question ol li a span {
   font-family: "Nanum Gothic", sans-serif;
@@ -246,12 +273,66 @@ main .curiosity-box .inquiry h2 {
   text-align: center;
 }
 main .curiosity-box .inquiry .inquiry-box {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
   width: 100%;
+  height: 100px;
   padding: 0 20px;
+}
+main .curiosity-box .inquiry .inquiry-box .img-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #ECE9E2;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+main .curiosity-box .inquiry .inquiry-box .img-box img {
+  height: 100%;
+  object-fit: contain;
+}
+main .curiosity-box .inquiry .inquiry-box #message-title {
+  border: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.5;
+  border-bottom: 1px solid #333;
+}
+main .curiosity-box .inquiry .inquiry-box #message-content {
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+  border: 1px solid #333;
+  margin-top: 20px;
+  overflow-y: scroll;
+}
+main .curiosity-box .inquiry .inquiry-box #message-content::-webkit-scrollbar {
+  width: 5px;
+}
+main .curiosity-box .inquiry .inquiry-box #message-content:hover::-webkit-scrollbar {
+  width: 7px;
+}
+main .curiosity-box .inquiry .inquiry-box #message-content::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #A48F75;
+}
+main .curiosity-box .inquiry .inquiry-box #message-content::-webkit-scrollbar-track {
+  background-color: #ECE9E2;
+}
+main .curiosity-box .inquiry .inquiry-box button {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  position: absolute;
+  right: 20px;
+  top: 275px;
+  cursor: pointer;
 }
 
 footer {

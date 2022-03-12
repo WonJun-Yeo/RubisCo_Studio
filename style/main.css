@@ -51,6 +51,20 @@
   border-spacing: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body:hover::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #A48F75;
+}
+body::-webkit-scrollbar-track {
+  background-color: #ECE9E2;
+}
+
 a {
   text-decoration: none;
 }

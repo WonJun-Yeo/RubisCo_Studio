@@ -9,6 +9,7 @@
 
 // ui
 @import './ui/btn.scss';
+@import './ui/scroll.scss';
 
 // style
 
@@ -17,6 +18,10 @@
     box-sizing: border-box;
     color :inherit;
     background-color: inherit;
+}
+
+body {
+    @include scroll;
 }
 
 a {
