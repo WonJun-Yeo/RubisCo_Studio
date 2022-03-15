@@ -1,0 +1,275 @@
+// common_scss
+@import './common_scss/reset.scss';
+@import './common_scss/color.scss';
+@import './common_scss/typhography.scss';
+
+// layout
+@import './layout/flexbox.scss';
+@import './layout/position.scss';
+
+// ui
+@import './ui/btn.scss';
+@import './ui/scroll.scss';
+
+// style
+
+
+* {
+    @include reset;
+    box-sizing: border-box;
+    color :inherit;
+    background-color: inherit;
+}
+
+body {
+    @include scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+.wraper {
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+img {
+    object-fit: cover;
+}
+
+header {
+    @include font_12($black);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: $bgc;
+    .wraper {
+        @include flexbox(end, center);
+        ul {
+            @include flexbox;
+            li {
+                padding : 0 12px;
+            }
+            li:last-child {
+                @include flexbox-column;
+                padding-right: 0;
+                ul {
+                    @include flexbox-column;
+                    @include pos-center-y;
+                    top: 65px;
+                    li {
+                        padding: 5px;
+                    }
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+nav {
+    @include font_12($black);
+    background-color: $white;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid $brown;
+    .wraper {
+        @include flexbox(between, center);
+        img {
+            width: 150px;
+            height: 40px;
+            object-fit:fill;
+        }
+        ul {
+            @include flexbox;
+            li {
+                padding-left: 30px;
+            }
+        }
+        div {
+            input {
+                border: none;
+                border-bottom: 1px solid $brown;
+            }
+            button {
+                padding-left: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+main {
+    .wraper {
+        @include flexbox-column;
+        max-width: 1300px;
+        padding-top: 112px;
+        h1 {
+            @include font_12($black);
+            margin : 30px 0;
+        }
+        .best-p {
+            .best-p-list {
+                @include flexbox(start, start);
+                width: 100%;
+                padding: 20px;
+                background-color: $bgc;
+                .best-p-list-item {
+                    position: relative;
+                    width: calc(25% - 9px);
+                    height: 220px;
+                    margin-right: 12px;
+                    a {
+                        width: 100%;
+                        h4 {
+                            @include font_14($white);
+                            position: absolute;
+                            width: 100%;
+                            top: 0;
+                            left: 0;
+                            background-color: $brown;
+                            opacity: 0.8;
+                            padding: 5px 0;
+                            text-align: center;
+                        }
+                        .main-p {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                        .sub-p {
+                            display: none;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    a:hover .main-p {
+                        display: none;
+                    }
+                    a:hover .sub-p {
+                        display: block;
+                    }
+                }
+                .best-p-list-item:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+footer {
+    padding-top : 35px;
+    @include font_12($black);
+    background-color: $bgc;
+    .wraper {
+        @include flexbox-column;
+        width: 100%;
+        padding : 0 40px;
+        .detail-info-top {
+            width: 100%;
+            ul {
+                @include flexbox(start, start);
+                li {
+                    @include flexbox-column(start, start);
+                    width: 20%;
+                    padding: 6px 0 0 15px;
+                    h2 {
+                        @include font_14($white-black);
+                        font-weight: 700;
+                        margin-bottom:15px;
+                    }
+                    p {
+                        @include font_24($white-black);
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    }
+                    ul {
+                        @include flexbox-column(start, start);
+                        @include font_12($white-black);
+                        width: 100%;;
+                        li {
+                            width: 100%;
+                            line-height: 2;
+                            padding: 0;
+                            a {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    span {
+                        @include font_12($white-black);
+                        font-weight: 700;
+                        line-height: 2;
+                        padding: 0;
+                    }
+                }
+                li:last-child {
+                    width: auto;
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .detail-info-bottom {
+            @include flexbox(between, start);
+            width: 100%;;
+            margin: 35px 0 40px;
+            padding-top: 35px;
+            border-top: 1px solid $border;
+            ul {
+                @include flexbox-column(start, start);
+                li {
+                    ul {
+                        @include flexbox(start, start);
+                        flex-direction: row;
+                        li {
+                            @include flexbox-inline(start, start);
+                            line-height: 2;
+                            h2 {
+                                @include font_12($white-black);
+                                font-weight: 700;
+                                margin-right: 10px;
+                            }
+                            p {
+                                @include font_12($black-white);
+                                margin-right: 30px;
+                                span {
+                                    @include font_12($white-black);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sns {
+                ul {
+                    width: 100%;
+                    @include flexbox(start, start);
+                    flex-direction: row;
+                    font-size: 30px;
+                    li {
+                        padding: 10px 20px;
+                        border : 1px solid $border;
+                    }
+                    li:nth-child(1) {
+                        margin-right: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
