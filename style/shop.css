@@ -56,9 +56,6 @@
 body::-webkit-scrollbar {
   width: 5px;
 }
-body:hover::-webkit-scrollbar {
-  width: 7px;
-}
 body::-webkit-scrollbar-thumb {
   width: 5px;
   background-color: #A48F75;
@@ -211,7 +208,18 @@ section .wraper main .img-box li a img {
   width: 100%;
   object-fit: cover;
 }
+section .wraper main .img-box li a p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8b9197;
+  text-align: center;
+}
 section .wraper main .pagination-box {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
   margin: 20px 0 50px;
 }
 section .wraper main .pagination-box .pagination {
@@ -237,6 +245,10 @@ section .wraper aside .drop-box {
   align-items: center;
   display: flex;
   justify-content: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
   width: 100%;
   min-height: 500px;
   border: 1px solid #D6D9DC;

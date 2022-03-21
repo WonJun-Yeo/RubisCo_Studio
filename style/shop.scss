@@ -138,10 +138,15 @@ section {
                             width: 100%;
                             object-fit: cover;
                         }
+                        p {
+                            @include font_12($black-white);
+                            text-align: center;
+                        }
                     }
                 }
             }
             .pagination-box {
+                @include font_14(#111);
                 margin: 20px 0 50px;
                 .pagination {
                     @include flexbox;
@@ -161,6 +166,7 @@ section {
             padding: 0 10px;
             .drop-box {
                 @include flexbox;
+                @include font_14($black);
                 width: 100%;
                 min-height: 500px;
                 border: 1px solid $border;

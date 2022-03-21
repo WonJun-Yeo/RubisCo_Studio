@@ -54,9 +54,6 @@
 body::-webkit-scrollbar {
   width: 5px;
 }
-body:hover::-webkit-scrollbar {
-  width: 7px;
-}
 body::-webkit-scrollbar-thumb {
   width: 5px;
   background-color: #A48F75;
@@ -242,6 +239,10 @@ main .pagination-box .pagination {
   align-items: center;
   display: flex;
   justify-content: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
 }
 main .pagination-box .pagination .page-item {
   cursor: pointer;

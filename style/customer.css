@@ -54,9 +54,6 @@
 body::-webkit-scrollbar {
   width: 5px;
 }
-body:hover::-webkit-scrollbar {
-  width: 7px;
-}
 body::-webkit-scrollbar-thumb {
   width: 5px;
   background-color: #A48F75;
@@ -93,6 +90,7 @@ header {
   width: 100%;
   height: 40px;
   background-color: #ECE9E2;
+  z-index: 2;
 }
 header .wraper {
   align-items: center;
@@ -215,9 +213,6 @@ main .curiosity-box .question ol {
 main .curiosity-box .question ol::-webkit-scrollbar {
   width: 5px;
 }
-main .curiosity-box .question ol:hover::-webkit-scrollbar {
-  width: 7px;
-}
 main .curiosity-box .question ol::-webkit-scrollbar-thumb {
   width: 5px;
   background-color: #A48F75;
@@ -290,6 +285,7 @@ main .curiosity-box .inquiry .inquiry-box .img-box {
   width: 100%;
   height: 100%;
   margin-top: 10px;
+  z-index: -1;
 }
 main .curiosity-box .inquiry .inquiry-box .img-box img {
   height: 100%;
@@ -313,9 +309,6 @@ main .curiosity-box .inquiry .inquiry-box #message-content {
 }
 main .curiosity-box .inquiry .inquiry-box #message-content::-webkit-scrollbar {
   width: 5px;
-}
-main .curiosity-box .inquiry .inquiry-box #message-content:hover::-webkit-scrollbar {
-  width: 7px;
 }
 main .curiosity-box .inquiry .inquiry-box #message-content::-webkit-scrollbar-thumb {
   width: 5px;

@@ -3,10 +3,6 @@
         width: 5px;
     }
       
-    &:hover::-webkit-scrollbar {
-        width: 7px;
-    }
-      
     &::-webkit-scrollbar-thumb {
         width: 5px;
         background-color: $brown;

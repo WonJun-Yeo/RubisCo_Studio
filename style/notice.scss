@@ -173,6 +173,7 @@ main {
         margin: 40px 0;
         .pagination {
             @include flexbox;
+            @include font_14(#111);
             .page-item {
                 cursor: pointer;
                 padding: 0 10px;
