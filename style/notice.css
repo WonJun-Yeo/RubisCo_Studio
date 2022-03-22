@@ -204,7 +204,7 @@ main .wraper form select {
 }
 main .wraper table {
   width: 100%;
-  line-height: 2;
+  line-height: 3;
 }
 main .wraper table thead tr {
   font-family: "Nanum Gothic", sans-serif;

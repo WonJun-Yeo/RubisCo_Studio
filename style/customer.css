@@ -291,6 +291,14 @@ main .curiosity-box .inquiry .inquiry-box .img-box img {
   height: 100%;
   object-fit: contain;
 }
+main .curiosity-box .inquiry .inquiry-box .img-box .user-info {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  margin-left: 40px;
+  line-height: 2;
+}
 main .curiosity-box .inquiry .inquiry-box #message-title {
   border: none;
   padding: 0;

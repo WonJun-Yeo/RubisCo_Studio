@@ -54,9 +54,6 @@
 body::-webkit-scrollbar {
   width: 5px;
 }
-body:hover::-webkit-scrollbar {
-  width: 7px;
-}
 body::-webkit-scrollbar-thumb {
   width: 5px;
   background-color: #A48F75;
