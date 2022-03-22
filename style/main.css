@@ -80,6 +80,15 @@ img {
   object-fit: cover;
 }
 
+.upToHead {
+  position: fixed;
+  top: 90vh;
+  left: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
 header {
   font-family: "Nanum Gothic", sans-serif;
   font-size: 12px;
@@ -155,7 +164,12 @@ nav .wraper ul {
   justify-content: center;
 }
 nav .wraper ul li {
-  padding-left: 30px;
+  margin-left: 30px;
+  transition: all 500ms ease;
+}
+nav .wraper ul li:hover {
+  font-weight: 700;
+  background-color: #FAF6F3;
 }
 nav .wraper div input {
   border: none;
@@ -386,6 +400,7 @@ nav .wraper div button {
   justify-content: space-between;
   width: 100%;
   line-height: 2;
+  transition: all 500ms ease;
 }
 .notice .wraper .notice-box div ul li a {
   font-family: "Nanum Gothic", sans-serif;
@@ -399,6 +414,10 @@ nav .wraper div button {
   font-size: 10px;
   font-weight: 400;
   color: #7e6f5b;
+}
+.notice .wraper .notice-box div ul li:hover {
+  font-weight: 700;
+  background-color: #FAF6F3;
 }
 .notice .wraper .notice-box div .more {
   font-family: "Nanum Gothic", sans-serif;

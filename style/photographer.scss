@@ -44,6 +44,15 @@ img {
     object-fit: cover;
 }
 
+.upToHead {
+    position: fixed;
+    top: 90vh;
+    left: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
 header {
     @include font_12($black);
     position: fixed;
@@ -95,7 +104,13 @@ nav {
         ul {
             @include flexbox;
             li {
-                padding-left: 30px;
+                margin-left: 30px;
+                transition: all 500ms ease;
+            }
+            li:hover {
+               font-weight: 700;
+               background-color: $bgc_mid;
+               
             }
         }
         div {
@@ -123,10 +138,8 @@ main {
         .best-p {
             .best-p-list {
                 @include flexbox(start, start);
-                
                 width: 100%;
                 padding: 20px;
-                background-color: $bgc;
                 .best-p-list-item {
                     position: relative;
                     width: calc(25% - 9px);
@@ -153,6 +166,11 @@ main {
                             display: none;
                             width: 100%;
                             object-fit: cover;
+                        }
+                        p {
+                            @include font_12($black);
+                            text-align: center;
+                            line-height: 2;
                         }
                     }
                     a:hover .main-p {

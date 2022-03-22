@@ -83,6 +83,15 @@ img {
   object-fit: cover;
 }
 
+.upToHead {
+  position: fixed;
+  top: 90vh;
+  left: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
 header {
   font-family: "Nanum Gothic", sans-serif;
   font-size: 12px;
@@ -159,7 +168,12 @@ nav .wraper ul {
   justify-content: center;
 }
 nav .wraper ul li {
-  padding-left: 30px;
+  margin-left: 30px;
+  transition: all 500ms ease;
+}
+nav .wraper ul li:hover {
+  font-weight: 700;
+  background-color: #FAF6F3;
 }
 nav .wraper div input {
   border: none;
@@ -191,7 +205,6 @@ main .wraper .best-p .best-p-list {
   justify-content: flex-start;
   width: 100%;
   padding: 20px;
-  background-color: #ECE9E2;
 }
 main .wraper .best-p .best-p-list .best-p-list-item {
   position: relative;
@@ -224,6 +237,14 @@ main .wraper .best-p .best-p-list .best-p-list-item a .sub-p {
   display: none;
   width: 100%;
   object-fit: cover;
+}
+main .wraper .best-p .best-p-list .best-p-list-item a p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  line-height: 2;
 }
 main .wraper .best-p .best-p-list .best-p-list-item a:hover .main-p {
   display: none;

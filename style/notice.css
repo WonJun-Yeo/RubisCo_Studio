@@ -155,7 +155,12 @@ nav .wraper ul {
   justify-content: center;
 }
 nav .wraper ul li {
-  padding-left: 30px;
+  margin-left: 30px;
+  transition: all 500ms ease;
+}
+nav .wraper ul li:hover {
+  font-weight: 700;
+  background-color: #FAF6F3;
 }
 nav .wraper div input {
   border: none;
@@ -231,6 +236,10 @@ main .wraper table tbody tr .subject {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
+}
+main .wraper table tbody tr:hover {
+  font-weight: 700;
+  background-color: #FAF6F3;
 }
 main .pagination-box {
   margin: 40px 0;

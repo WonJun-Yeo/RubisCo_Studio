@@ -42,6 +42,15 @@ img {
     object-fit: cover;
 }
 
+.upToHead {
+    position: fixed;
+    top: 90vh;
+    left: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
 header {
     @include font_12($black);
     position: fixed;
@@ -95,7 +104,12 @@ nav {
         ul {
             @include flexbox;
             li {
-                padding-left: 30px;
+                margin-left: 30px;
+                transition: all 500ms ease;
+            }
+            li:hover {
+                font-weight: 700;
+                background-color: $bgc_mid;
             }
         }
         div {
@@ -278,6 +292,7 @@ nav {
                     @include flexbox(between, start);
                     width: 100%;
                     line-height: 2;
+                    transition: all 500ms ease;
                     a {
                         @include font_12($black);
                         width: 100%;
@@ -285,6 +300,10 @@ nav {
                     p {
                         @include font_10($beige);
                     }
+                }
+                li:hover {
+                    font-weight: 700;
+                    background-color: $bgc_mid;
                 }
                 
                }
