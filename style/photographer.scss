@@ -23,7 +23,7 @@
 
 body {
     @include scroll;
-    position: relative;
+    
 }
 
 a {
@@ -38,6 +38,7 @@ button {
     max-width: 1300px;
     height: 100%;
     margin: 0 auto;
+    padding : 0 20px;
 }
 
 img {
@@ -47,7 +48,7 @@ img {
 .upToHead {
     position: fixed;
     top: 90vh;
-    left: 40px;
+    left: 15px;
     font-size: 14px;
     cursor: pointer;
     transition: all 500ms ease-in-out;
