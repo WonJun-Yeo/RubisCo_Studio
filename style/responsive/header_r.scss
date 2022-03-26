@@ -1,0 +1,17 @@
+@media screen and (max-width : 992px ) {
+    header {
+        .wraper {
+            ul {
+                transition: transform 250ms ease;
+                transform: translateX(90%);
+                li {
+                padding: 0 12px;
+                    .header-arrow {
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

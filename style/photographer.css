@@ -74,7 +74,6 @@ button {
   max-width: 1300px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 img {
@@ -114,6 +113,9 @@ header .wraper ul {
 }
 header .wraper ul li {
   padding: 0 12px;
+}
+header .wraper ul li .header-arrow {
+  display: none;
 }
 header .wraper ul li:last-child {
   align-items: center;

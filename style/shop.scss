@@ -39,7 +39,6 @@ button {
     max-width: 1300px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 40px;
 }
 
 img {
@@ -69,6 +68,9 @@ header {
             @include flexbox;
             li {
                 padding : 0 12px;
+                .header-arrow {
+                    display: none;
+                }
             }
             li:last-child {
                 @include flexbox-column;

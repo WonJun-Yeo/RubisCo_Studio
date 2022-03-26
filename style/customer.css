@@ -106,6 +106,9 @@ header .wraper ul {
 header .wraper ul li {
   padding: 0 12px;
 }
+header .wraper ul li .header-arrow {
+  display: none;
+}
 header .wraper ul li:last-child {
   align-items: center;
   display: flex;

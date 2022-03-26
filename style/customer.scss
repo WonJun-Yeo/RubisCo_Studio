@@ -57,6 +57,9 @@ header {
       max-width: 1300px;
       li {
         padding: 0 12px;
+        .header-arrow {
+          display: none;
+        }
       }
       li:last-child {
         @include flexbox-column;
