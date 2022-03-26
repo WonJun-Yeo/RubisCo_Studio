@@ -1,0 +1,17 @@
+@media screen and (max-width :992px) {
+    main {
+        .curiosity-box {
+            flex-direction: column;
+            .question {
+                width: calc(100% - 80px);
+                margin: 0 40px;
+            }
+            .inquiry {
+                width: calc(100% - 80px);
+                margin: 40px;
+            }
+        }
+    }
+}
+
+
