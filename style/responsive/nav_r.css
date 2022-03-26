@@ -1,0 +1,10 @@
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 12px;
+  }
+  nav .wraper .nav-search {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=nav_r.css.map */
