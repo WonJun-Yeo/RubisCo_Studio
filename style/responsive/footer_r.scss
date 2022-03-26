@@ -1,0 +1,43 @@
+@media screen and (max-width :992px) {
+    footer {
+        padding-top: 0;
+        .wraper {
+          .detail-info-top {
+            display: none;
+          }
+          .detail-info-bottom {
+            position: relative;
+            border : none;
+            ul {
+                li {
+                    ul {
+                        li {
+                            h2 {
+                                font-size: 12px;
+                            }
+                            p {
+                                font-size: 12px;
+                                margin-right: 5px;
+                                span {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sns {
+                ul {
+                    font-size: 20px;
+                    li {
+                        padding: 5px 10px;
+                    }
+                    li:nth-child(1) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+          }
+        }
+      }
+}
