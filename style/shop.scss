@@ -52,6 +52,14 @@ img {
     font-size: 14px;
     cursor: pointer;
     transition: all 500ms ease-in-out;
+    z-index: 6;
+    background-color: $white;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.upToHead:hover {
+    background-color: $border;
 }
 
 header {
