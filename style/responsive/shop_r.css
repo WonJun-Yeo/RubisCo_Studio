@@ -1,0 +1,10 @@
+@media screen and (max-width: 992px) {
+  section .wraper main {
+    width: 100%;
+  }
+  section .wraper aside {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=shop_r.css.map */
