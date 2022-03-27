@@ -1,0 +1,16 @@
+@media screen and (max-width: 992px) {
+  main .wraper .best-p .best-p-list {
+    flex-wrap: wrap;
+  }
+  main .wraper .best-p .best-p-list .best-p-list-item {
+    width: calc(50% - 12px);
+  }
+  main .wraper .best-p .best-p-list .best-p-list-item a p {
+    margin-bottom: 20px;
+  }
+  main .wraper .best-p .best-p-list .best-p-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=photographer_r.css.map */

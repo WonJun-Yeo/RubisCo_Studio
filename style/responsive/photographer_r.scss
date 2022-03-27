@@ -1,0 +1,23 @@
+@media screen and (max-width :992px) {
+    main {
+        .wraper {
+            .best-p {
+                .best-p-list {
+                    flex-wrap: wrap;
+                    .best-p-list-item {
+                        width: calc(50% - 12px);
+                        a {
+                            p {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    .best-p-list-item:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

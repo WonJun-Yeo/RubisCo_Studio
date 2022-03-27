@@ -209,7 +209,7 @@ main .wraper .best-p .best-p-list {
 main .wraper .best-p .best-p-list .best-p-list-item {
   position: relative;
   width: calc(25% - 9px);
-  height: 220px;
+  height: auto;
   margin-right: 12px;
 }
 main .wraper .best-p .best-p-list .best-p-list-item a {
@@ -290,7 +290,7 @@ main .wraper .all-p ul {
 }
 main .wraper .all-p ul li {
   width: calc(25% - 9px);
-  height: 250px;
+  height: auto;
   margin-right: 12px;
 }
 main .wraper .all-p ul li a {
@@ -307,7 +307,7 @@ main .wraper .all-p ul li a p {
   font-weight: 400;
   color: #333;
   text-align: center;
-  margin-top: 5px;
+  margin: 5px 0 20px;
 }
 main .wraper .all-p ul li:nth-child(4n) {
   margin-right: 0;
