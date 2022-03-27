@@ -1,0 +1,35 @@
+@media screen and (max-width: 992px) {
+  .banner .wraper {
+    height: 500px;
+  }
+
+  .shop .wraper .box-wraper .shop-box div {
+    flex-wrap: wrap;
+  }
+  .shop .wraper .box-wraper .shop-box div a {
+    width: calc(50% - 12px);
+    margin-right: 12px;
+  }
+  .shop .wraper .box-wraper .shop-box div a p {
+    margin-bottom: 40px;
+  }
+  .shop .wraper .box-wraper .shop-box div a:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .photographer .wraper .box-wraper .photographer-box div {
+    flex-wrap: wrap;
+  }
+  .photographer .wraper .box-wraper .photographer-box div a {
+    width: calc(50% - 12px);
+    margin-right: 12px;
+  }
+  .photographer .wraper .box-wraper .photographer-box div a p {
+    margin-bottom: 40px;
+  }
+  .photographer .wraper .box-wraper .photographer-box div a:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=main_r.css.map */

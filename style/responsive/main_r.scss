@@ -1,0 +1,64 @@
+@media screen and (max-width :992px) {
+.banner {
+    .wraper {
+      height: 500px;  
+    }
+  }
+
+  
+.shop {
+    .wraper {
+      .box-wraper {
+        .shop-box {
+          div {
+              flex-wrap: wrap;
+            a {
+              width: calc((100% / 2) - 12px);
+              margin-right: 12px;
+              p {
+                  margin-bottom: 40px;
+              }
+            }
+            a:nth-child(2n) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+    .photographer {
+        .wraper {
+        .box-wraper {
+            .photographer-box {
+                div {
+                    flex-wrap: wrap;
+                a {
+                    width: calc((100% / 2) - 12px);
+                    margin-right: 12px;
+                    p {
+                        margin-bottom: 40px;
+                    }
+                }
+                a:nth-child(2n) {
+                    margin-right: 0;
+                }
+                }
+            }    
+        }
+        }
+    }
+
+
+
+
+
+
+
+
+
+    
+}
+

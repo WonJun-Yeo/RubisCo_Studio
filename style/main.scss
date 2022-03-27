@@ -296,10 +296,13 @@ nav {
             transition: all 500ms ease;
             a {
               @include font_12($black);
-              width: 100%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
             p {
               @include font_10($beige);
+              min-width: 55px;
             }
           }
           li:hover {

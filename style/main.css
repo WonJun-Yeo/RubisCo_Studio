@@ -413,13 +413,16 @@ nav .wraper div button {
   font-size: 12px;
   font-weight: 400;
   color: #333;
-  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .notice .wraper .notice-box div ul li p {
   font-family: "Nanum Gothic", sans-serif;
   font-size: 10px;
   font-weight: 400;
   color: #7e6f5b;
+  min-width: 55px;
 }
 .notice .wraper .notice-box div ul li:hover {
   font-weight: 700;
