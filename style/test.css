@@ -1,0 +1,70 @@
+.drop-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.droped-elements {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.remove-bt {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+
+.droped-img {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.droped-info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    border-top: 1px solid #D6D9DC;
+    border-bottom: 1px solid #D6D9DC;
+}
+
+.droped-img-name {
+    font-size: 14px;
+}
+
+.pd-checkBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.form-check-inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.pd-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pd-num p {
+    padding: 0 5px;
+}
+
+.pd-num button {
+    cursor: pointer;
+}
