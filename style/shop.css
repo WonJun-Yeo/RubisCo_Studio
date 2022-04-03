@@ -266,6 +266,20 @@ section .wraper aside {
   width: 30%;
   padding: 0 10px;
 }
+section .wraper aside .reset-bt {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #A48F75;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+section .wraper aside .reset-bt:hover {
+  background-color: #ECE9E2;
+}
 section .wraper aside .drop-box {
   align-items: center;
   display: flex;

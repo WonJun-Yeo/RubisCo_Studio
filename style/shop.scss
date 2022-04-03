@@ -189,6 +189,17 @@ section {
             top: 195px;
             width: 30%;
             padding: 0 10px;
+            .reset-bt {
+                @include font_14($brown);
+                position: absolute;
+                top: -30px;
+                right: 0;
+                padding: 5px 20px;
+                cursor: pointer;
+            }
+            .reset-bt:hover {
+                background-color: $bgc;
+            }
             .drop-box {
                 @include flexbox;
                 @include font_14($black);

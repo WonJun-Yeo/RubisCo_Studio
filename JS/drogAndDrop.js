@@ -6,7 +6,15 @@ $(function(){
     });
 
     $('.draggable').on("dragstart", function(){
-        //console.log("드래그시작");
+        $('.guided-arrow').css({
+            display : "flex"
+        });
+        $('.fa-long-arrow-alt-down').css({
+            backgroundColor: "transparent"
+        });
+        $('.guided-arrow > p').css({
+            backgroundColor: "transparent"
+        });
     });
 
     $('.draggable').on("dragstop", function(){
@@ -14,6 +22,9 @@ $(function(){
         $(this).css({
             top : "0px",
             left: "0px"
+        });
+        $('.guided-arrow').css({
+            display : "none"
         })
     })
 
@@ -27,9 +38,6 @@ $(function(){
             $(this).css({
                 justifyContent: "start"
             })
-
-
-
 
             // 드랍이벤트 htrml 골격
             let dropHtml =
@@ -95,6 +103,7 @@ $(function(){
                 }
             });
 
+            // 갯수 버튼
             let pdNum = 1;
             let pdPrice = 1000;
 
@@ -125,7 +134,34 @@ $(function(){
                 }
             });
 
+            // reset 버튼
+            $('.reset-bt').on("click", function(){
+                $('.drop-box').html(
+                    defaultHtml
+                );
+                $('.drop-box').css({
+                    justifyContent: "center"
+                })
+            });
+
+            // storage 버튼
+            $('.bt-s').on("click", function(){
+                if($('.drop-box').children('.droped-elements').length != 0) {
+                    $('.drop-box').html(
+                        defaultHtml
+                    );
+                    $('.drop-box').css({
+                        justifyContent: "center"
+                    });
+                    $('.arlert').show().delay(2000).hide(1);
+                } 
+            });
+
+
+
+
 
         }
     })
 })
+
